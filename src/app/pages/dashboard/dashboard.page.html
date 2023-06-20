@@ -1,0 +1,37 @@
+<ion-header class="title">
+		<ion-title>To-do Task Management</ion-title>
+</ion-header>
+<ion-content>
+	<ion-card>
+		<form [formGroup]="DashboardPage">
+	<ion-item>
+		<ion-label>TaskName:</ion-label>
+		<ion-input type="text" formControlName="name" placeholder="Enter task"/>
+	</ion-item>
+	<ion-item>
+		<ion-label>Duration:</ion-label>
+		<ion-input type="text" formControlName="Duration" placeholder="Enter Duration"/>
+	</ion-item>
+	<ion-item>
+		<ion-label>StartDate:</ion-label>
+		<ion-input type="date" formControlName="Startdate" placeholder="Enter Startdate"/>
+	</ion-item>
+	<ion-item>
+		<ion-label>EndDate:</ion-label>
+		<ion-input type="date" formControlName="Enddate" placeholder="Enter Enddate"/>
+	</ion-item><br/>
+	<div class="item-note" item-end>
+		<button ion-button (click)="addTask()">Save</button>
+	</div>
+</form>
+</ion-card>
+
+	<!-- <div>
+		<ion-list>
+			<ion-item *ngFor="let todo of taskList">
+				{{todo}}
+			</ion-item>
+		</ion-list>
+	</div> -->
+	
+</ion-content>

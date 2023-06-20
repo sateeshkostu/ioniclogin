@@ -1,0 +1,36 @@
+<ion-content>
+  <div class="fleccenter">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title color="success">Register</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <form [formGroup]="SigninPage">
+          <ion-item>
+            <ion-label position="floating">Name</ion-label>
+            <ion-input formControlName="Name" type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input formControlName="Email" type="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input formControlName="Password" type="password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">ConfirmPassword</ion-label>
+            <ion-input formControlName="Confirmpassword" type="password"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">PhoneNo</ion-label>
+            <ion-input formControlName="phoneNo" type="tel"></ion-input>
+          </ion-item>
+          <ion-button color="success" size="full" (click)="signup()"  >Register</ion-button>
+          <ion-button style="color: black; margin-top: 15px; background: white;" routerLink="/login">Already register click to Login!</ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
